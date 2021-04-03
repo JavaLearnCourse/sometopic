@@ -14,6 +14,7 @@ public class DemoFOS {
             e.printStackTrace();
         }
         String s = "Helllo dsk,flgvds dasvfsgb";
+
         byte[] b = s.getBytes();
         for(int i = 0; i < b.length; i++){
             try {

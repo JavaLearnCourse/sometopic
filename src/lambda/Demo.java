@@ -4,6 +4,10 @@ package lambda;
 interface StringFunc{
     String func(String n);
 }
+
+
+
+
 public class Demo {
 
 

@@ -4,9 +4,13 @@ import java.io.*;
 
 public class PushBack {
 
+    /*
+        mark & reset - impossible to use
+        Alternative markSupported
+     */
     public static void main(String[] args) {
         String s = "if (a == 4)  a = 0;\n";
-        byte[] buf = new byte[s.length()];
+        byte[] buf = s.getBytes();
 
         ByteArrayInputStream cr = new ByteArrayInputStream(buf);
         try (PushbackInputStream r = new PushbackInputStream(cr)){
@@ -22,7 +26,7 @@ public class PushBack {
                         }
                         break;
                         default:
-                            System.out.println((char)c);
+                            System.out.print((char)c);
                 }
             }
 
